@@ -1,0 +1,105 @@
+@media screen and (min-width:641px){
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a b b c"
+    "a d e f"
+    "a g h f";
+}
+
+section{
+    background-color: red;
+}
+
+
+
+section:first-of-type{
+    grid-area: a;
+    background-color: green;
+}
+
+section:nth-of-type(2){
+    grid-area:b ;
+    background-color: green;
+}
+section:nth-of-type(3){
+    grid-area:c ;
+    background-color: red;
+}
+section:nth-of-type(4){
+    grid-area: d;
+    background-color: orange;
+}
+section:nth-of-type(5){
+    grid-area:e ;
+    background-color: red;
+}
+section:nth-of-type(6){
+    grid-area:f ;
+    background-color: green;
+}
+section:nth-of-type(7){
+    grid-area: g;
+    background-color: red;
+}
+section:nth-of-type(8){
+    grid-area:h ;
+    background-color: orange;
+}
+}
+@media screen and (max-width:640px){
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a a a a"
+    "b c d e"
+    "f f f f"
+    "g g h h";
+}
+
+section{
+    background-color: red;
+}
+
+
+
+section:first-of-type{
+    grid-area: a;
+    background-color: green;
+}
+
+section:nth-of-type(2){
+    grid-area:b ;
+    background-color: green;
+}
+section:nth-of-type(3){
+    grid-area:c ;
+    background-color: red;
+}
+section:nth-of-type(4){
+    grid-area: d;
+    background-color: orange;
+}
+section:nth-of-type(5){
+    grid-area:e ;
+    background-color: red;
+}
+section:nth-of-type(6){
+    grid-area:f ;
+    background-color: green;
+}
+section:nth-of-type(7){
+    grid-area: g;
+    background-color: red;
+}
+section:nth-of-type(8){
+    grid-area:h ;
+    background-color: orange;
+}
+}
